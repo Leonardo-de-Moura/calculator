@@ -16,7 +16,7 @@ body {
   margin: auto;
   transform: translateY(50%);
   background-color: aqua;
-  width: 50%;
+  width: 90%;
   height: 50vh;
   border: 1px solid white;
 }
@@ -40,26 +40,30 @@ body {
   height: calc(100% -80px);
 }
 .grid {
+  position: relative;
+  right: 5px;
   background-color: rgb(76, 72, 72);
-  width: 50px;
-  height: 50px;
+  max-width: auto;
+  max-height: auto;
   margin: 2px;
   border-radius: 10px;
   object-fit: contain;
 }
 .grid img {
   transform: translate(35%, 30%);
-  width: 30px;
+  min-width: 30px;
   height: 30px;
 }
 .grid span {
-	position: relative;
-	left: 20px;
-	top: 12px;
-	font-size: 1.4rem;
+  position: relative;
+  left: 17px;
+  top: 10px;
+  font-size: 1.4rem;
 }
 .grid:last-child {
-  width: 380%;
+  width: 395%;
+
+
 }
 .grid:last-child img {
   position: relative;
