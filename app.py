@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-main= Flask(__name__)
-CORS(main)
+app= Flask(__name__)
+CORS(app)
 
-@main.route('/calcular', methods=['POST'])
+@app.route('/calcular', methods=['POST'])
 def calcular():
 	data= request.get_json()
 	n1= data.get("n1")
@@ -38,6 +38,6 @@ def calcular():
 	return jsonify({"n1": n1, "n2": n2, "operation": operation, "result": result})
 
 
-if __name__ == '__main__':
-    main.run(debug=True)
+
+app.run(debug=True)
 			
